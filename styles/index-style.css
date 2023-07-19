@@ -407,8 +407,9 @@ a {
     }
 
     .instant-container2 {
-        padding: 0rem 2.5rem;
+        padding: 5rem 2.5rem 0rem 2.5rem;
     }
+
 
     /* ================ Instant End (Medium)================ */
 }
@@ -513,7 +514,7 @@ a {
     .instant-left2 {
         width: 100%;
         text-align: center;
-        padding-top: 5rem;
+
     }
 
     .instant-right {
