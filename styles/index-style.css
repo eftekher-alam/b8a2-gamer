@@ -15,10 +15,21 @@
     color: #FF42A5;
 }
 
+
 .heading-primary {
     font-size: 2rem;
     font-weight: 700;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: .5rem 0rem;
+}
+
+.heading-secondary {
+    font-size: 2rem;
+    font-weight: 700;
+    background: #0B0223;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -210,6 +221,101 @@ a {
 
 /* ================ Gamer End ================ */
 
+/* ================ Funny ================ */
+.funny-section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.funny-container {
+    padding: 3rem 8rem;
+    text-align: center;
+}
+
+.funny-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 0rem;
+}
+
+.funny-card {
+    width: 100%;
+}
+
+.funny-img {
+    width: 90%;
+}
+
+.funny-card p {
+    padding-top: 1rem;
+}
+
+/* ================ Funny End ================ */
+
+/* ================ instant ================ */
+.instant-section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.instant-container {
+    padding: 0rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instant-container2 {
+    padding: 8rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.instant-left {
+    width: 40%;
+    text-align: right;
+}
+
+.instant-left2 {
+    width: 40%;
+    text-align: left;
+}
+
+.instant-right {
+    width: 60%;
+    text-align: right;
+    position: relative;
+}
+
+.instant-right2 {
+    width: 60%;
+    text-align: left;
+    position: relative;
+
+}
+
+.instant-img-big {
+    width: 70%;
+}
+
+.instant-img-sm {
+    width: 35%;
+    position: absolute;
+    bottom: -15%;
+    right: 50%;
+}
+
+.instant-img-sm2 {
+    width: 35%;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+}
+
+/* ================ instant End ================ */
+
 
 /* ---------------------------------------------[ Medium Device ]---------------------------------------------- */
 @media screen and (max-width: 992px) {
@@ -274,6 +380,37 @@ a {
     }
 
     /* ================ Gammer (Medium) ================ */
+
+    /* ================ Funny (Medium) ================ */
+    .funny-container {
+        padding: 2.5rem 2.5rem;
+    }
+
+    .funny-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+    }
+
+    .funny-img {
+        width: 70%;
+    }
+
+
+    /* ================ Funny End (Medium)================ */
+
+
+
+
+    /* ================ Instant (Medium)================ */
+    .instant-container {
+        padding: 0rem 2.5rem;
+    }
+
+    .instant-container2 {
+        padding: 0rem 2.5rem;
+    }
+
+    /* ================ Instant End (Medium)================ */
 }
 
 /* ---------------------------------------------[ Small Device ]---------------------------------------------- */
@@ -345,6 +482,50 @@ a {
         text-align: center;
     }
 
-    /* ================ Gammer (small) ================ */
+    /* ================ Gammer End (small) ================ */
+
+
+
+    /* ================ Funny (small) ================ */
+    .funny-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ================ Funny End (small) ================ */
+
+
+    /* ================ Instant (small)================ */
+    .instant-container {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .instant-container2 {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .instant-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .instant-left2 {
+        width: 100%;
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    .instant-right {
+        width: 100%;
+        padding-right: 5rem;
+    }
+
+    .instant-right2 {
+        width: 100%;
+        padding-left: 5rem;
+    }
+
+    /* ================ Instant End (small)================ */
 
 }
