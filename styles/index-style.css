@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ---------------------- Common Classes ----------------------- */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Work Sans;
+}
+
+.img-width {
+    width: 100%;
+}
+
+.text-pink {
+    color: #FF42A5;
+}
+
+.heading-primary {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: .5rem 0rem;
+}
+
+.title-second {
+    color: #0B0223;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    padding: 1rem 2rem;
+    margin: 1rem 0rem;
+    border: none;
+    color: white;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-secondary {
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.desc-primary {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+
+/* ================ Navigation ================ */
+.nav-container {
+    height: 4rem;
+    box-shadow: 1px 1px 5px rgba(211, 211, 211, 0.575);
+}
+
+.all-nav {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 8rem;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.logo {
+    width: 4rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul,
+li,
+a {
+    padding: .6rem;
+    list-style: none;
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.icon-menu-item {
+    margin-left: 1.2rem;
+    padding-left: 1.2rem;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
+
+/* ================ Navigation End ================ */
+
+
+/* ================ Banner ================ */
+.banner-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-image: url("../images/Group\ 14.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    padding: 0rem 8rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner-left {
+    width: 50%;
+    height: 100%;
+
+}
+
+.banner-right {
+    width: 50%;
+    height: 100%;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.cover-title {
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-left button {
+    margin: 1rem 1rem 0rem 0rem;
+}
+
+.banner-left p {
+    display: block;
+    padding: .3rem 0rem;
+}
+
+/* ================ Banner End ================ */
+
+
+
+/* ================ Gamer ================ */
+.gamer-section {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.gamer {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gamer-container {
+    padding: 0rem 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.gamer-left {
+    width: 60%;
+}
+
+.gamer-right {
+    width: 40%;
+    text-align: right;
+}
+
+
+
+/* ================ Gamer End ================ */
+
+
+/* ---------------------------------------------[ Medium Device ]---------------------------------------------- */
+@media screen and (max-width: 992px) {
+    /* ---------------------- Common Classes ----------------------- */
+
+    .btn-primary {
+        padding: 1rem 1rem;
+        font-size: .8rem;
+    }
+
+    .btn-secondary {
+        padding: 1rem 1rem;
+        font-size: .8rem;
+    }
+
+    /* ================ Navigation (Medium) ================ */
+    .nav-container {
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 2.5rem;
+    }
+
+
+    /* ================ Navigation End (Medium) ================ */
+
+    /* ================ Banner (Medium) ================ */
+    .banner {
+        padding: 0rem 2.5rem;
+    }
+
+    .banner-left {
+        padding: 2rem 0rem;
+    }
+
+
+    .title-second {
+        font-size: 1.6rem;
+    }
+
+    .cover-title {
+        font-size: 3rem;
+    }
+
+    /* ================ Banner End (Medium) ================ */
+
+    /* ================ Gamer (Medium) ================ */
+
+    .gamer-container {
+        padding: 0rem 2.5rem;
+    }
+
+    .gamer-left {
+        width: 60%;
+    }
+
+    .gamer-right {
+        width: 40%;
+    }
+
+    /* ================ Gammer (Medium) ================ */
+}
+
+/* ---------------------------------------------[ Small Device ]---------------------------------------------- */
+@media screen and (max-width:576px) {
+
+    /* ================ Navigation (Small) ================ */
+    .menu {
+        flex-direction: column;
+    }
+
+    .icon-menu-item {
+        margin-top: .8rem;
+    }
+
+    /* ================ Navigation End (Small) ================ */
+
+
+    /* ================ Banner (small) ================ */
+    .banner-container {
+        background-image: none;
+    }
+
+    .banner {
+        padding: 0rem 2.5rem;
+        flex-direction: column-reverse;
+    }
+
+    .banner-left-container {
+        padding: 3.5rem 0rem 3.5rem 5rem;
+    }
+
+    .banner-left {
+        width: 100%;
+        background-image: url("../images/Group\ 14.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-right {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+
+    .banner-left button {
+        margin: .5rem .5rem 0 0;
+    }
+
+    /* ================ Banner End (small) ================ */
+
+
+
+
+    /* ================ Gamer (small) ================ */
+
+    .gamer-container {
+        flex-direction: column;
+    }
+
+    .gamer-left {
+        width: 100%;
+    }
+
+    .gamer-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ================ Gammer (small) ================ */
+
+}
