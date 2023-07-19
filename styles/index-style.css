@@ -51,7 +51,7 @@
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     color: #FFF;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -63,7 +63,7 @@
     border-radius: 48px;
     background: #4EC5F7;
     color: #FFF;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -249,6 +249,45 @@ a {
 .funny-card p {
     padding-top: 1rem;
 }
+
+/* play button */
+.funny-card3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.funny-img-container3 {
+    position: relative;
+    display: inline-block;
+}
+
+.play-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.897);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.funny-img-container3:hover .play-button {
+    display: flex;
+}
+
+.funny-img-container3:hover {
+    opacity: 80%;
+}
+
 
 /* ================ Funny End ================ */
 
