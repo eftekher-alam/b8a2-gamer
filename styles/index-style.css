@@ -672,6 +672,9 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    footer {
+        margin-top: 3rem;
+    }
 
 }
 
