@@ -391,7 +391,7 @@ a {
 
 /* ================ career ================ */
 .careers-section {
-    margin: 2rem 0rem;
+    margin-top: 2rem;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
 }
 
@@ -464,6 +464,67 @@ a {
 }
 
 /* ================ Multi-button End ================ */
+/* ================ Footer ================ */
+footer {
+    background-color: #0B0223;
+}
+
+
+.all-footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-container {
+    padding: 5rem 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: .8rem;
+}
+
+.f-menu,
+.f-icon {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.f-terms {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.f-menu li a {
+    color: white;
+}
+
+.f-icon-item a {
+    font-size: 2rem;
+}
+
+.f-terms-container {
+    padding-bottom: .8rem;
+}
+
+.f-terms li a {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.f-copy-right {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: .8rem;
+}
+
+/* ================ Footer End ================ */
 
 
 /* ---------------------------------------------[ Medium Device ]---------------------------------------------- */
@@ -597,6 +658,21 @@ a {
     }
 
     /* ================ Multi-button (Medium)================ */
+
+    .footer-container {
+        padding: 5rem 2.5rem;
+    }
+
+    .f-menu,
+    .f-icon {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .f-terms {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
 }
 
 /* ---------------------------------------------[ Small Device ]---------------------------------------------- */
@@ -739,7 +815,19 @@ a {
 
     .btn-img-cotainer img {
         width: 2.4rem;
+    }
 
+    .footer-container {
+        padding: 5rem 0rem;
+    }
+
+
+    .f-menu li a {
+        font-size: .7rem;
+    }
+
+    .f-terms li a {
+        font-size: .7rem;
     }
 
 }
