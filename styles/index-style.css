@@ -15,6 +15,10 @@
     color: #FF42A5;
 }
 
+.text-white {
+    color: white;
+}
+
 
 .heading-primary {
     font-size: 2rem;
@@ -30,6 +34,16 @@
     font-size: 2rem;
     font-weight: 700;
     background: #0B0223;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: .5rem 0rem;
+}
+
+.heading-secondary-white {
+    font-size: 2rem;
+    font-weight: 700;
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -56,6 +70,18 @@
     text-transform: uppercase;
 }
 
+.btn-primary-white {
+    padding: 1rem 2rem;
+    margin: 1rem 0rem;
+    border: none;
+    background-color: white;
+    border-radius: 48px;
+    color: #FF42A5;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 .btn-secondary {
     padding: 1rem 2rem;
     border: none;
@@ -68,8 +94,15 @@
     text-transform: uppercase;
 }
 
+
 .desc-primary {
     color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.desc-primary-white {
+    color: white;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -356,6 +389,83 @@ a {
 /* ================ instant End ================ */
 
 
+/* ================ career ================ */
+.careers-section {
+    margin: 2rem 0rem;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+.careers-container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.careers {
+    padding: 0rem 0rem 0rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.careers-left {
+    width: 40%;
+    color: white;
+}
+
+.careers-right {
+    width: 60%;
+}
+
+.career-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+}
+
+/* ================ career End ================ */
+
+
+/* ================ Multi-button ================ */
+.multi-button-section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.multi-button {
+    padding: 4rem 8rem;
+}
+
+.multi-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+
+.button-area {
+    border-radius: 5rem;
+    padding: .5rem;
+}
+
+.btn-img-cotainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.button-area:hover {
+    border: 1px solid#FF42A5;
+    color: #FF42A5;
+    background-color: #ff42a411;
+}
+
+/* ================ Multi-button End ================ */
+
+
 /* ---------------------------------------------[ Medium Device ]---------------------------------------------- */
 @media screen and (max-width: 992px) {
     /* ---------------------- Common Classes ----------------------- */
@@ -451,6 +561,42 @@ a {
 
 
     /* ================ Instant End (Medium)================ */
+
+
+    /* ================ career (Medium)================ */
+    .careers {
+        margin: 8rem 0rem 3rem;
+        padding: 3rem;
+        flex-direction: column;
+    }
+
+    .careers-left {
+        width: 100%;
+    }
+
+    .careers-right {
+        width: 80%;
+    }
+
+    .career-info-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0rem;
+    }
+
+    /* ================ career End (Medium)================ */
+
+    /* ================ Multi-button (Medium)================ */
+
+    .multi-button {
+        padding: 0rem 2.5rem;
+    }
+
+    .button-area {
+        padding: .5rem;
+    }
+
+    /* ================ Multi-button (Medium)================ */
 }
 
 /* ---------------------------------------------[ Small Device ]---------------------------------------------- */
@@ -567,5 +713,33 @@ a {
     }
 
     /* ================ Instant End (small)================ */
+
+    /* ================ career (small)================ */
+    .careers {
+        margin: 8rem 0rem 3rem 0rem;
+        padding: 2rem;
+    }
+
+    /* ================ career end (small)================ */
+    .multi-button {
+        padding: 1rem;
+    }
+
+
+    .button-area {
+        padding: 0.2rem;
+    }
+
+
+
+    .btn-img-cotainer {
+        font-size: 0.6rem;
+        gap: .2rem;
+    }
+
+    .btn-img-cotainer img {
+        width: 2.4rem;
+
+    }
 
 }
